@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label >PRueba</ion-label>
+    <ion-input type="text" (blur)="cambiar(input.value)" #input></ion-input>
+  </ion-item>
+  <p>{{contenedor}}</p>
+</ion-content>
