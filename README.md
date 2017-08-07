@@ -1,4 +1,4 @@
-#Añadir puntos y comas a un número en JavaScript
+# Añadir puntos y comas a un número en JavaScript
 
 Básicamente es una aplicación en Ionic que toma como entrada un String, que debería de ser un número y le añade un formato 
 Ej.: 
