@@ -13,7 +13,7 @@ export class HomePage {
   public cambiar(value:string):void{
     value=value.replace(/[^0-9,]/g,'');
     
-    if((value.match(/,/g) || []).length>1)
+    if((value.match(/,/g) || []).length>0)
       value=this.modificar(value.toString());
     else
       value=value.replace(/\B(?=(\d{3})+(?!\d))/g,'.');
@@ -29,7 +29,7 @@ export class HomePage {
     //este es la expresión regular que añade los puntos
     aux[0]=aux[0].replace(/\B(?=(\d{3})+(?!\d))/g,'.');
     //unimos la parte entera con la fraccionaria
-    val=aux[0]+","+aux[1];
+    val=(aux[1]!='')?aux[0]+","+aux[1]:aux[0];
     return val;
   }
 }
